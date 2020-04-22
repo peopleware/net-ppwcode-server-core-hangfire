@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- target frameworks -->
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <!-- Root Namespace -->
+    <RootNamespace>PPWCode.Server.Core.Hangfire</RootNamespace>
+
+    <!-- nuget package -->
+    <IsPackable>true</IsPackable>
+
+    <!-- Stylecop -->
+    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- PPWCode -->
+    <PackageReference Include="PPWCode.Server.Core" Version="[1.0.0-rc010002, 2)" />
+    <!-- Hangfire -->
+    <PackageReference Include="Hangfire.Core" Version="1.7.*" />
+
+    <!-- SourceLink -->
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
