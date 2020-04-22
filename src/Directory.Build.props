@@ -30,16 +30,16 @@
     <LangVersion>7.3</LangVersion>
 
     <!-- nuget package -->
-    <Description>The PPWCode Server.Core library</Description>
+    <Description>The PPWCode Server.Core.Hangfire library</Description>
     <Product>PPWCode</Product>
     <Authors>dvdwouwe;rvdginste</Authors>
     <Company>Peopleware NV</Company>
     <Copyright>Copyright © Peopleware NV 2014-2020</Copyright>
 
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/peopleware/net-ppwcode-server-core.git</RepositoryUrl>
-    <PackageTags>ppwcode api core</PackageTags>
-    <PackageProjectUrl>https://github.com/peopleware/net-ppwcode-server-core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/peopleware/net-ppwcode-server-core-hangfire.git</RepositoryUrl>
+    <PackageTags>ppwcode server core hangfire</PackageTags>
+    <PackageProjectUrl>https://github.com/peopleware/net-ppwcode-server-core-hangfire</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageIcon>ppwcode_logo.jpg</PackageIcon>
