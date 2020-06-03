@@ -10,7 +10,6 @@
 // limitations under the License.
 
 using Castle.Core;
-using Castle.Core.Internal;
 using Castle.MicroKernel;
 using Castle.MicroKernel.Context;
 
@@ -42,7 +41,7 @@ namespace PPWCode.Server.Core.Hangfire.RequestContext.Resolvers
         {
             const string PerformContext = "performContext";
 
-            return dependency.TargetType.Is<IRequestContext>()
+            return (dependency.TargetType == typeof(IRequestContext))
                    && context.AdditionalArguments.Contains(PerformContext)
                    && context.AdditionalArguments[PerformContext] is PerformContext;
         }
