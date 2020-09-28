@@ -47,7 +47,7 @@ namespace PPWCode.Server.Core.Hangfire.RequestContext.Implementations
 
         /// <inheritdoc />
         public override DateTime RequestTimestamp
-            => (_requestTimestamp = _requestTimestamp ?? PerformContext.BackgroundJob?.CreatedAt.ToUniversalTime() ?? TimeProvider.UtcNow).Value;
+            => (_requestTimestamp = _requestTimestamp ?? TimeProvider.UtcNow).Value;
 
         /// <inheritdoc />
         public override CancellationToken RequestAborted
