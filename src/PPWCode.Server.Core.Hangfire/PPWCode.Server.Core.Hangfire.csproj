@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- target frameworks -->
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
 
     <!-- Root Namespace -->
     <RootNamespace>PPWCode.Server.Core.Hangfire</RootNamespace>
@@ -20,12 +20,12 @@
 
   <ItemGroup>
     <!-- PPWCode -->
-    <PackageReference Include="PPWCode.Server.Core" Version="1.0.0" />
+    <PackageReference Include="PPWCode.Server.Core" Version="[1.2.0, 2)" />
     <!-- Hangfire -->
     <PackageReference Include="Hangfire.Core" Version="1.7.*" />
 
     <!-- SourceLink -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
