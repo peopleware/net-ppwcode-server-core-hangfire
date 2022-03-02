@@ -1,4 +1,4 @@
-// Copyright 2020 by PeopleWare n.v..
+// Copyright 2020-2022 by PeopleWare n.v..
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -22,8 +22,6 @@ using PPWCode.Server.Core.RequestContext.Implementations;
 using PPWCode.Server.Core.RequestContext.Interfaces;
 using PPWCode.Vernacular.Exceptions.IV;
 using PPWCode.Vernacular.Persistence.IV;
-
-#pragma warning disable CA1065
 
 namespace PPWCode.Server.Core.Hangfire.RequestContext.Implementations
 {
@@ -49,7 +47,7 @@ namespace PPWCode.Server.Core.Hangfire.RequestContext.Implementations
 
         /// <inheritdoc />
         public override DateTime RequestTimestamp
-            => (_requestTimestamp = _requestTimestamp ?? TimeProvider.UtcNow).Value;
+            => _requestTimestamp ??= TimeProvider.UtcNow;
 
         /// <inheritdoc />
         public override CancellationToken RequestAborted
@@ -61,11 +59,11 @@ namespace PPWCode.Server.Core.Hangfire.RequestContext.Implementations
 
         /// <inheritdoc />
         public override IPrincipal User
-            => (_principal = _principal ?? Thread.CurrentPrincipal) ?? throw new ProgrammingError("Euh, no principal found on current thread");
+            => (_principal ??= Thread.CurrentPrincipal) ?? throw new ProgrammingError("Euh, no principal found on current thread");
 
         /// <inheritdoc />
         public override string TraceIdentifier
-            => _traceIdentifier = _traceIdentifier ?? Guid.NewGuid().ToString("D");
+            => _traceIdentifier ??= Guid.NewGuid().ToString("D");
 
         /// <inheritdoc />
         public override string Link(string route, IDictionary<string, object> parameters)
