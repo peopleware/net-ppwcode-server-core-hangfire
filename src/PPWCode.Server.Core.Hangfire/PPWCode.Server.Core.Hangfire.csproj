@@ -20,12 +20,9 @@
 
   <ItemGroup>
     <!-- PPWCode -->
-    <PackageReference Include="PPWCode.Server.Core" Version="[1.3.0, 2)" />
+    <PackageReference Include="PPWCode.Server.Core" Version="1.4.0-rc010077" />
     <!-- Hangfire -->
     <PackageReference Include="Hangfire.Core" Version="1.7.*" />
-
-    <!-- SourceLink -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
