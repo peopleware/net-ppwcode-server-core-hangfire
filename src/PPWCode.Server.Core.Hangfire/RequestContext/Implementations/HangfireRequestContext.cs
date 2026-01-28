@@ -33,7 +33,7 @@ namespace PPWCode.Server.Core.Hangfire.RequestContext.Implementations
         private DateTime? _requestTimestamp;
         private string _traceIdentifier;
 
-        /// <inheritdoc />
+        /// <inheritdoc cref="AbstractRequestContext" />
         public HangfireRequestContext(
             [NotNull] ITimeProvider timeProvider,
             [NotNull] PerformContext performContext)
