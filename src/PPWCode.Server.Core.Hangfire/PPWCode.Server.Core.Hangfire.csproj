@@ -11,12 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App"/>
-  </ItemGroup>
-
-  <ItemGroup>
     <!-- PPWCode -->
     <PackageReference Include="PPWCode.Server.Core" />
+
     <!-- Hangfire -->
     <PackageReference Include="Hangfire.Core" />
   </ItemGroup>
