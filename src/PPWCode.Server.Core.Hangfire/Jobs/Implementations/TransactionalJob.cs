@@ -67,7 +67,6 @@ namespace PPWCode.Server.Core.Hangfire.Jobs.Implementations
             [NotNull] string requestDescription,
             [NotNull] Func<CancellationToken, Task> lambda,
             CancellationToken cancellationToken)
-
         {
             async Task<int> WrapperAsync(CancellationToken can)
             {

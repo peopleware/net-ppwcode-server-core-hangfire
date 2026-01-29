@@ -8,28 +8,31 @@ ProjectSection(SolutionItems) = preProject
 	LICENSE = LICENSE
 	NOTICE = NOTICE
 	README.md = README.md
-	assets\ppwcode_logo.jpg = assets\ppwcode_logo.jpg
-EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "psake", "psake", "{B4E8CA09-C38C-40DA-B52D-9D9C08B55B4C}"
-ProjectSection(SolutionItems) = preProject
-	init-psake.ps1 = init-psake.ps1
-	psakefile.ps1 = psakefile.ps1
+	assets\ppw-logo-2.png = assets\ppw-logo-2.png
+	assets\ppw-logo.png = assets\ppw-logo.png
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{74A29F17-0BB7-4349-8A8B-591066980636}"
 ProjectSection(SolutionItems) = preProject
 	src\Directory.Build.props = src\Directory.Build.props
-	src\version.props = src\version.props
-EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "style-cop", "style-cop", "{2D70616C-E4BB-4AC4-AAB6-97AD8C79ED98}"
-ProjectSection(SolutionItems) = preProject
-	src\StyleCop.ruleset = src\StyleCop.ruleset
-	src\StyleCop-Tests.ruleset = src\StyleCop-Tests.ruleset
+	src\Directory.Packages.props = src\Directory.Packages.props
+	src\common-tests.props = src\common-tests.props
+	src\common.props = src\common.props
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPWCode.Server.Core.Hangfire", "src\PPWCode.Server.Core.Hangfire\PPWCode.Server.Core.Hangfire.csproj", "{6BD66472-1887-4E7A-89E8-D58FE6E3A7D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "analyzers", "analyzers", "{0ED15F5F-55C0-401A-A677-A6E00494D600}"
+	ProjectSection(SolutionItems) = preProject
+		src\Analyzer.ruleset = src\Analyzer.ruleset
+		src\Analyzer-Tests.ruleset = src\Analyzer-Tests.ruleset
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build-pipeline", "build-pipeline", "{9D98CFB8-DD79-4352-8060-B39A09FF94E8}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
