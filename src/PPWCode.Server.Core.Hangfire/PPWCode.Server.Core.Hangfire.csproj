@@ -1,28 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="..\common.props" />
+
   <PropertyGroup>
     <!-- target frameworks -->
-    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 
     <!-- Root Namespace -->
     <RootNamespace>PPWCode.Server.Core.Hangfire</RootNamespace>
-
-    <!-- nuget package -->
-    <IsPackable>true</IsPackable>
-
-    <!-- Stylecop -->
-    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App"/>
-  </ItemGroup>
-
-  <ItemGroup>
     <!-- PPWCode -->
-    <PackageReference Include="PPWCode.Server.Core" Version="2.*"/>
+    <PackageReference Include="PPWCode.Server.Core" />
+
     <!-- Hangfire -->
-    <PackageReference Include="Hangfire.Core" Version="1.7.*"/>
+    <PackageReference Include="Hangfire.Core" />
   </ItemGroup>
 
 </Project>
