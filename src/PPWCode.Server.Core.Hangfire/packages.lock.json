@@ -442,7 +442,7 @@
       },
       "Castle.Windsor": {
         "type": "CentralTransitive",
-        "requested": "[5.1.1, 5.1.2]",
+        "requested": "[5.1.1, )",
         "resolved": "5.1.1",
         "contentHash": "m1YCo+V+MHUqJV7+KtXlNYig93tEAnPdPevIHi8hVqV8/ceF82Nqe8vS1ROQ25nweTcxYgkrLHwhvJsH2SFwZA==",
         "dependencies": {
@@ -992,7 +992,7 @@
       },
       "Castle.Windsor": {
         "type": "CentralTransitive",
-        "requested": "[5.1.1, 5.1.2]",
+        "requested": "[5.1.1, )",
         "resolved": "5.1.1",
         "contentHash": "m1YCo+V+MHUqJV7+KtXlNYig93tEAnPdPevIHi8hVqV8/ceF82Nqe8vS1ROQ25nweTcxYgkrLHwhvJsH2SFwZA==",
         "dependencies": {
@@ -1536,7 +1536,7 @@
       },
       "Castle.Windsor": {
         "type": "CentralTransitive",
-        "requested": "[5.1.1, 5.1.2]",
+        "requested": "[5.1.1, )",
         "resolved": "5.1.1",
         "contentHash": "m1YCo+V+MHUqJV7+KtXlNYig93tEAnPdPevIHi8hVqV8/ceF82Nqe8vS1ROQ25nweTcxYgkrLHwhvJsH2SFwZA==",
         "dependencies": {
