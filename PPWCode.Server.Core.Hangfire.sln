@@ -18,6 +18,7 @@ ProjectSection(SolutionItems) = preProject
 	src\Directory.Packages.props = src\Directory.Packages.props
 	src\common-tests.props = src\common-tests.props
 	src\common.props = src\common.props
+	global.json = global.json
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPWCode.Server.Core.Hangfire", "src\PPWCode.Server.Core.Hangfire\PPWCode.Server.Core.Hangfire.csproj", "{6BD66472-1887-4E7A-89E8-D58FE6E3A7D5}"
