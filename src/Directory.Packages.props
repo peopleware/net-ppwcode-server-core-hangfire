@@ -40,10 +40,6 @@
         <!-- newtonsoft -->
         <PackageVersion Include="Newtonsoft.Json" Version="13.*" />
 
-        <!-- castle -->
-        <PackageVersion Include="Castle.Core" Version="4.*"/>
-        <PackageVersion Include="Castle.Windsor" Version="5.1.1"/>
-
         <!-- Asp.Net Core - versioning apis -->
         <PackageVersion Include="Asp.Versioning.Mvc" Version="8.*"/>
 
