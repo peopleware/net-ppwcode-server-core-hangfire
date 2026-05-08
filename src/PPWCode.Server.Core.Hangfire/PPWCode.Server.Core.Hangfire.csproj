@@ -16,6 +16,7 @@
 
     <!-- Hangfire -->
     <PackageReference Include="Hangfire.Core" />
+    <PackageReference Include="PPWCode.Vernacular.NHibernate.III" />
   </ItemGroup>
 
 </Project>
