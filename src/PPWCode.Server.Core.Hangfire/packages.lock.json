@@ -29,33 +29,42 @@
       },
       "PPWCode.Server.Core": {
         "type": "Direct",
-        "requested": "[3.*, )",
-        "resolved": "3.0.0",
-        "contentHash": "6qwenjxII5lXwqoUANY+RBVDvSZrNflxub44YAoKrc2LXMbb7FFXsStGqSjNg2hynpKaWSWLi/np8x8LDD5pww==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.1.0-alpha.3",
+        "contentHash": "lgCJrXD9AoMetnF0pRuTpijEyNY5erqz2qjKN2RvnWuFlKC69k3Vm55F0ugt1RicZv/s7HzuIROWFbQaNdzwhw==",
         "dependencies": {
           "Asp.Versioning.Mvc": "8.1.1",
-          "Castle.Windsor": "[5.1.1, 5.1.2]",
+          "Castle.Windsor": "5.1.1",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
-          "NHibernateProfiler.Appender": "6.0.6050",
+          "NHibernateProfiler.Appender": "6.0.6053",
           "Newtonsoft.Json": "13.0.4",
-          "PPWCode.API.Core": "2.1.0",
-          "PPWCode.Vernacular.Contracts.I": "1.4.1",
+          "PPWCode.API.Core": "2.1.1",
+          "PPWCode.Vernacular.Contracts.I": "1.5.0",
           "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
-          "PPWCode.Vernacular.NHibernate.III": "4.1.0",
+          "PPWCode.Vernacular.NHibernate.III": "4.2.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
           "PPWCode.Vernacular.Semantics.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "10.0.7"
         }
       },
       "PPWCode.Vernacular.Contracts.I": {
         "type": "Direct",
         "requested": "[1.*, )",
-        "resolved": "1.4.1",
-        "contentHash": "4GlI02Sxovny8zLMbMo3VBVqZDkoVWLSWDSz0hNlpmuy34wRbxFcLWzjyMpx6ps2PXZ35jpPBOMh3+F5VQWyiA==",
+        "resolved": "1.5.0",
+        "contentHash": "Hv7hjZ+RXEnVkAZEdwlAW5QbT0Hvh+pCusaiQT5bRD93Z58OuMHH6Q48TizzufF6+DRm9rJdnufIcOWWvKLKaw=="
+      },
+      "PPWCode.Vernacular.NHibernate.III": {
+        "type": "Direct",
+        "requested": "[4.*-*, )",
+        "resolved": "4.2.0",
+        "contentHash": "Q+t7LYlCKBUOXIDeVJz5psyWPe0IFZn1jRf9vdG9Dpf1MPeh4cX7+QzMORl14/bo3U7cwCIFFNc2oKcS8KRhOA==",
         "dependencies": {
-          "PPWCode.Vernacular.Exceptions.IV": "2.2.1"
+          "Common.Logging": "[3.4.1, 4.0.0)",
+          "JetBrains.Annotations": "2025.2.4",
+          "NHibernate": "5.6.0",
+          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
+          "System.Configuration.ConfigurationManager": "10.0.5"
         }
       },
       "StyleCop.Analyzers": {
@@ -370,8 +379,8 @@
       },
       "System.Diagnostics.EventLog": {
         "type": "Transitive",
-        "resolved": "10.0.2",
-        "contentHash": "TJPpTLF5MFPobq09c9BQ5X8QuviQfsKvH0Jbm7MkGylGvfIdRqJQLZDPC5sMRFkk9aZhmgir1NJKekip2NxfaA=="
+        "resolved": "10.0.7",
+        "contentHash": "WbmDLeTPYhEzXhvYVioTVn/D1XX6bovyny9n5p8Zxtf03+eY385RB818teZm6n+fA63iZNvng0/Np4tLuhkMhQ=="
       },
       "System.Drawing.Common": {
         "type": "Transitive",
@@ -393,8 +402,8 @@
       },
       "System.Security.Cryptography.ProtectedData": {
         "type": "Transitive",
-        "resolved": "10.0.2",
-        "contentHash": "me7W69hkjdu5EzHXCQSXv9OS3uAkMXT26oZuWTaabeoO5BPxSVuRVJ2FSfIW8xyGxBb6mKCE6ZKg7TLk3IzJBQ=="
+        "resolved": "10.0.7",
+        "contentHash": "eqKW9wyPUhZi6pxy9Y0fQO/bdHROcwj0tYdmoGEPCPCtCJLFdVVAlzuuYYEnJI64HxhoXPYGhtx891g/jwN4rg=="
       },
       "System.Security.Permissions": {
         "type": "Transitive",
@@ -432,7 +441,7 @@
       },
       "Castle.Windsor": {
         "type": "CentralTransitive",
-        "requested": "[5.1.1, 5.1.2]",
+        "requested": "[5.1.1, )",
         "resolved": "5.1.1",
         "contentHash": "m1YCo+V+MHUqJV7+KtXlNYig93tEAnPdPevIHi8hVqV8/ceF82Nqe8vS1ROQ25nweTcxYgkrLHwhvJsH2SFwZA==",
         "dependencies": {
@@ -463,8 +472,8 @@
       "NHibernateProfiler.Appender": {
         "type": "CentralTransitive",
         "requested": "[6.0.*, )",
-        "resolved": "6.0.6050",
-        "contentHash": "3X2NJSnNg2Dvl9TzKEJe9YZRvVXfAoxglk7O+gGB5rUP7/0V49XIUUjhbbkWixTie5Wrghf7Cj8I3oH6zbIafg==",
+        "resolved": "6.0.6053",
+        "contentHash": "WN0Cm9s8k+K4aPTEwAhVykzG8l37iPRJgdAJNbHfAycIo+y+D/J8PnDcqCfLdrzDKtu/6zgKEkIAjBUGbMDpXw==",
         "dependencies": {
           "Azure.Storage.Blobs": "12.18.0",
           "Google.Protobuf": "3.24.4",
@@ -481,7 +490,7 @@
       },
       "PPWCode.API.Core": {
         "type": "CentralTransitive",
-        "requested": "[2.*, )",
+        "requested": "[2.*-*, )",
         "resolved": "2.1.1",
         "contentHash": "8xA4WoQ9KQh2g1y7Shec8Psh6Lr23rGSM4kR0ab+TeACurLdeteVwUzBjmLJfW+DQD0GgmVW1a0ybkv0DV008g==",
         "dependencies": {
@@ -493,19 +502,6 @@
         "requested": "[2.*, )",
         "resolved": "2.2.1",
         "contentHash": "EnSpiADCKJenktPGhgsDAnsSzbf+HTDq52Wkr2F+58/sanx2rb4//Q68SnYEaOKl/AACQBp+FOKuGih0lYYW0A=="
-      },
-      "PPWCode.Vernacular.NHibernate.III": {
-        "type": "CentralTransitive",
-        "requested": "[4.*, )",
-        "resolved": "4.1.0",
-        "contentHash": "QLEuQ65ggE05vGtzLsaKU9+/aBRmyy5UesslB0GMCcI+830GK5Gt9q/a0vnT0WjfT2aLlYV++aJH3kBSVcq4AA==",
-        "dependencies": {
-          "Common.Logging": "[3.4.1, 4.0.0)",
-          "JetBrains.Annotations": "2025.2.4",
-          "NHibernate": "5.6.0",
-          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2"
-        }
       },
       "PPWCode.Vernacular.Persistence.IV": {
         "type": "CentralTransitive",
@@ -531,18 +527,18 @@
       "System.Configuration.ConfigurationManager": {
         "type": "CentralTransitive",
         "requested": "[10.*, )",
-        "resolved": "10.0.2",
-        "contentHash": "UpBPpVzF+xbB3GsBrraPvlYCwUiOhs+RLxnTMKLqDs2gNNaAtxQRlKjXfMV3zxE+hiQkGId5olZ+9tE6xXHdwQ==",
+        "resolved": "10.0.7",
+        "contentHash": "NUV7+8ZpwAdtylEypliCwxTyMtt5oARCdEN9hOflL2dq5sGXHKAtBoVs1rb8qEj85ThC/5vJKDQmdiqKxZRgag==",
         "dependencies": {
-          "System.Diagnostics.EventLog": "10.0.2",
-          "System.Security.Cryptography.ProtectedData": "10.0.2"
+          "System.Diagnostics.EventLog": "10.0.7",
+          "System.Security.Cryptography.ProtectedData": "10.0.7"
         }
       },
       "System.Data.SqlClient": {
         "type": "CentralTransitive",
         "requested": "[4.*, )",
-        "resolved": "4.9.0",
-        "contentHash": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
+        "resolved": "4.9.1",
+        "contentHash": "A7RK9I4UaVHJ407GTfy37S4ABHt1+lZ+/uoA54zTv0XaaWgHO5BtXSMzMVqB6socIHEeeK5K1YRgaxCEfD79wQ==",
         "dependencies": {
           "runtime.native.System.Data.SqlClient.sni": "4.4.0"
         }
@@ -576,33 +572,42 @@
       },
       "PPWCode.Server.Core": {
         "type": "Direct",
-        "requested": "[3.*, )",
-        "resolved": "3.0.0",
-        "contentHash": "6qwenjxII5lXwqoUANY+RBVDvSZrNflxub44YAoKrc2LXMbb7FFXsStGqSjNg2hynpKaWSWLi/np8x8LDD5pww==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.1.0-alpha.3",
+        "contentHash": "lgCJrXD9AoMetnF0pRuTpijEyNY5erqz2qjKN2RvnWuFlKC69k3Vm55F0ugt1RicZv/s7HzuIROWFbQaNdzwhw==",
         "dependencies": {
           "Asp.Versioning.Mvc": "8.1.1",
-          "Castle.Windsor": "[5.1.1, 5.1.2]",
+          "Castle.Windsor": "5.1.1",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
-          "NHibernateProfiler.Appender": "6.0.6050",
+          "NHibernateProfiler.Appender": "6.0.6053",
           "Newtonsoft.Json": "13.0.4",
-          "PPWCode.API.Core": "2.1.0",
-          "PPWCode.Vernacular.Contracts.I": "1.4.1",
+          "PPWCode.API.Core": "2.1.1",
+          "PPWCode.Vernacular.Contracts.I": "1.5.0",
           "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
-          "PPWCode.Vernacular.NHibernate.III": "4.1.0",
+          "PPWCode.Vernacular.NHibernate.III": "4.2.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
           "PPWCode.Vernacular.Semantics.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "8.0.1"
         }
       },
       "PPWCode.Vernacular.Contracts.I": {
         "type": "Direct",
         "requested": "[1.*, )",
-        "resolved": "1.4.1",
-        "contentHash": "4GlI02Sxovny8zLMbMo3VBVqZDkoVWLSWDSz0hNlpmuy34wRbxFcLWzjyMpx6ps2PXZ35jpPBOMh3+F5VQWyiA==",
+        "resolved": "1.5.0",
+        "contentHash": "Hv7hjZ+RXEnVkAZEdwlAW5QbT0Hvh+pCusaiQT5bRD93Z58OuMHH6Q48TizzufF6+DRm9rJdnufIcOWWvKLKaw=="
+      },
+      "PPWCode.Vernacular.NHibernate.III": {
+        "type": "Direct",
+        "requested": "[4.*-*, )",
+        "resolved": "4.2.0",
+        "contentHash": "Q+t7LYlCKBUOXIDeVJz5psyWPe0IFZn1jRf9vdG9Dpf1MPeh4cX7+QzMORl14/bo3U7cwCIFFNc2oKcS8KRhOA==",
         "dependencies": {
-          "PPWCode.Vernacular.Exceptions.IV": "2.2.1"
+          "Common.Logging": "[3.4.1, 4.0.0)",
+          "JetBrains.Annotations": "2025.2.4",
+          "NHibernate": "5.6.0",
+          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
+          "System.Configuration.ConfigurationManager": "8.0.1"
         }
       },
       "StyleCop.Analyzers": {
@@ -918,8 +923,8 @@
       },
       "System.Diagnostics.EventLog": {
         "type": "Transitive",
-        "resolved": "10.0.2",
-        "contentHash": "TJPpTLF5MFPobq09c9BQ5X8QuviQfsKvH0Jbm7MkGylGvfIdRqJQLZDPC5sMRFkk9aZhmgir1NJKekip2NxfaA=="
+        "resolved": "8.0.1",
+        "contentHash": "n1ZP7NM2Gkn/MgD8+eOT5MulMj6wfeQMNS2Pizvq5GHCZfjlFMXV2irQlQmJhwA2VABC57M0auudO89Iu2uRLg=="
       },
       "System.Drawing.Common": {
         "type": "Transitive",
@@ -946,8 +951,8 @@
       },
       "System.Security.Cryptography.ProtectedData": {
         "type": "Transitive",
-        "resolved": "10.0.2",
-        "contentHash": "me7W69hkjdu5EzHXCQSXv9OS3uAkMXT26oZuWTaabeoO5BPxSVuRVJ2FSfIW8xyGxBb6mKCE6ZKg7TLk3IzJBQ=="
+        "resolved": "8.0.0",
+        "contentHash": "+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg=="
       },
       "System.Security.Permissions": {
         "type": "Transitive",
@@ -985,7 +990,7 @@
       },
       "Castle.Windsor": {
         "type": "CentralTransitive",
-        "requested": "[5.1.1, 5.1.2]",
+        "requested": "[5.1.1, )",
         "resolved": "5.1.1",
         "contentHash": "m1YCo+V+MHUqJV7+KtXlNYig93tEAnPdPevIHi8hVqV8/ceF82Nqe8vS1ROQ25nweTcxYgkrLHwhvJsH2SFwZA==",
         "dependencies": {
@@ -1016,8 +1021,8 @@
       "NHibernateProfiler.Appender": {
         "type": "CentralTransitive",
         "requested": "[6.0.*, )",
-        "resolved": "6.0.6050",
-        "contentHash": "3X2NJSnNg2Dvl9TzKEJe9YZRvVXfAoxglk7O+gGB5rUP7/0V49XIUUjhbbkWixTie5Wrghf7Cj8I3oH6zbIafg==",
+        "resolved": "6.0.6053",
+        "contentHash": "WN0Cm9s8k+K4aPTEwAhVykzG8l37iPRJgdAJNbHfAycIo+y+D/J8PnDcqCfLdrzDKtu/6zgKEkIAjBUGbMDpXw==",
         "dependencies": {
           "Azure.Storage.Blobs": "12.18.0",
           "Google.Protobuf": "3.24.4",
@@ -1034,7 +1039,7 @@
       },
       "PPWCode.API.Core": {
         "type": "CentralTransitive",
-        "requested": "[2.*, )",
+        "requested": "[2.*-*, )",
         "resolved": "2.1.1",
         "contentHash": "8xA4WoQ9KQh2g1y7Shec8Psh6Lr23rGSM4kR0ab+TeACurLdeteVwUzBjmLJfW+DQD0GgmVW1a0ybkv0DV008g==",
         "dependencies": {
@@ -1046,19 +1051,6 @@
         "requested": "[2.*, )",
         "resolved": "2.2.1",
         "contentHash": "EnSpiADCKJenktPGhgsDAnsSzbf+HTDq52Wkr2F+58/sanx2rb4//Q68SnYEaOKl/AACQBp+FOKuGih0lYYW0A=="
-      },
-      "PPWCode.Vernacular.NHibernate.III": {
-        "type": "CentralTransitive",
-        "requested": "[4.*, )",
-        "resolved": "4.1.0",
-        "contentHash": "QLEuQ65ggE05vGtzLsaKU9+/aBRmyy5UesslB0GMCcI+830GK5Gt9q/a0vnT0WjfT2aLlYV++aJH3kBSVcq4AA==",
-        "dependencies": {
-          "Common.Logging": "[3.4.1, 4.0.0)",
-          "JetBrains.Annotations": "2025.2.4",
-          "NHibernate": "5.6.0",
-          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2"
-        }
       },
       "PPWCode.Vernacular.Persistence.IV": {
         "type": "CentralTransitive",
@@ -1083,19 +1075,19 @@
       },
       "System.Configuration.ConfigurationManager": {
         "type": "CentralTransitive",
-        "requested": "[10.*, )",
-        "resolved": "10.0.2",
-        "contentHash": "UpBPpVzF+xbB3GsBrraPvlYCwUiOhs+RLxnTMKLqDs2gNNaAtxQRlKjXfMV3zxE+hiQkGId5olZ+9tE6xXHdwQ==",
+        "requested": "[8.*, )",
+        "resolved": "8.0.1",
+        "contentHash": "gPYFPDyohW2gXNhdQRSjtmeS6FymL2crg4Sral1wtvEJ7DUqFCDWDVbbLobASbzxfic8U1hQEdC7hmg9LHncMw==",
         "dependencies": {
-          "System.Diagnostics.EventLog": "10.0.2",
-          "System.Security.Cryptography.ProtectedData": "10.0.2"
+          "System.Diagnostics.EventLog": "8.0.1",
+          "System.Security.Cryptography.ProtectedData": "8.0.0"
         }
       },
       "System.Data.SqlClient": {
         "type": "CentralTransitive",
         "requested": "[4.*, )",
-        "resolved": "4.9.0",
-        "contentHash": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
+        "resolved": "4.9.1",
+        "contentHash": "A7RK9I4UaVHJ407GTfy37S4ABHt1+lZ+/uoA54zTv0XaaWgHO5BtXSMzMVqB6socIHEeeK5K1YRgaxCEfD79wQ==",
         "dependencies": {
           "runtime.native.System.Data.SqlClient.sni": "4.4.0"
         }
@@ -1129,33 +1121,42 @@
       },
       "PPWCode.Server.Core": {
         "type": "Direct",
-        "requested": "[3.*, )",
-        "resolved": "3.0.0",
-        "contentHash": "6qwenjxII5lXwqoUANY+RBVDvSZrNflxub44YAoKrc2LXMbb7FFXsStGqSjNg2hynpKaWSWLi/np8x8LDD5pww==",
+        "requested": "[3.*-*, )",
+        "resolved": "3.1.0-alpha.3",
+        "contentHash": "lgCJrXD9AoMetnF0pRuTpijEyNY5erqz2qjKN2RvnWuFlKC69k3Vm55F0ugt1RicZv/s7HzuIROWFbQaNdzwhw==",
         "dependencies": {
           "Asp.Versioning.Mvc": "8.1.1",
-          "Castle.Windsor": "[5.1.1, 5.1.2]",
+          "Castle.Windsor": "5.1.1",
           "JetBrains.Annotations": "2025.2.4",
           "NHibernate": "5.6.0",
-          "NHibernateProfiler.Appender": "6.0.6050",
+          "NHibernateProfiler.Appender": "6.0.6053",
           "Newtonsoft.Json": "13.0.4",
-          "PPWCode.API.Core": "2.1.0",
-          "PPWCode.Vernacular.Contracts.I": "1.4.1",
+          "PPWCode.API.Core": "2.1.1",
+          "PPWCode.Vernacular.Contracts.I": "1.5.0",
           "PPWCode.Vernacular.Exceptions.IV": "2.2.1",
-          "PPWCode.Vernacular.NHibernate.III": "4.1.0",
+          "PPWCode.Vernacular.NHibernate.III": "4.2.0",
           "PPWCode.Vernacular.Persistence.IV": "2.1.1",
           "PPWCode.Vernacular.Semantics.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "9.0.15"
         }
       },
       "PPWCode.Vernacular.Contracts.I": {
         "type": "Direct",
         "requested": "[1.*, )",
-        "resolved": "1.4.1",
-        "contentHash": "4GlI02Sxovny8zLMbMo3VBVqZDkoVWLSWDSz0hNlpmuy34wRbxFcLWzjyMpx6ps2PXZ35jpPBOMh3+F5VQWyiA==",
+        "resolved": "1.5.0",
+        "contentHash": "Hv7hjZ+RXEnVkAZEdwlAW5QbT0Hvh+pCusaiQT5bRD93Z58OuMHH6Q48TizzufF6+DRm9rJdnufIcOWWvKLKaw=="
+      },
+      "PPWCode.Vernacular.NHibernate.III": {
+        "type": "Direct",
+        "requested": "[4.*-*, )",
+        "resolved": "4.2.0",
+        "contentHash": "Q+t7LYlCKBUOXIDeVJz5psyWPe0IFZn1jRf9vdG9Dpf1MPeh4cX7+QzMORl14/bo3U7cwCIFFNc2oKcS8KRhOA==",
         "dependencies": {
-          "PPWCode.Vernacular.Exceptions.IV": "2.2.1"
+          "Common.Logging": "[3.4.1, 4.0.0)",
+          "JetBrains.Annotations": "2025.2.4",
+          "NHibernate": "5.6.0",
+          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
+          "System.Configuration.ConfigurationManager": "9.0.14"
         }
       },
       "StyleCop.Analyzers": {
@@ -1470,8 +1471,8 @@
       },
       "System.Diagnostics.EventLog": {
         "type": "Transitive",
-        "resolved": "10.0.2",
-        "contentHash": "TJPpTLF5MFPobq09c9BQ5X8QuviQfsKvH0Jbm7MkGylGvfIdRqJQLZDPC5sMRFkk9aZhmgir1NJKekip2NxfaA=="
+        "resolved": "9.0.15",
+        "contentHash": "IDnzlv94Tj0vQfkZ9sB0r45BjAfHvrZ9sSnxvHKhpRETvmKZJwSJO+XCMfl5VYyeKliLYaFSMflVp3q+ktTRBw=="
       },
       "System.Drawing.Common": {
         "type": "Transitive",
@@ -1493,8 +1494,8 @@
       },
       "System.Security.Cryptography.ProtectedData": {
         "type": "Transitive",
-        "resolved": "10.0.2",
-        "contentHash": "me7W69hkjdu5EzHXCQSXv9OS3uAkMXT26oZuWTaabeoO5BPxSVuRVJ2FSfIW8xyGxBb6mKCE6ZKg7TLk3IzJBQ=="
+        "resolved": "9.0.15",
+        "contentHash": "sObjWXydF/osVWObYPmqN1PGxx+XYlPbEqPDjUzYGQbanrdd4x9pIPnUwi7d7RuKEsZ5i814oVli9s3bMqlRog=="
       },
       "System.Security.Permissions": {
         "type": "Transitive",
@@ -1532,7 +1533,7 @@
       },
       "Castle.Windsor": {
         "type": "CentralTransitive",
-        "requested": "[5.1.1, 5.1.2]",
+        "requested": "[5.1.1, )",
         "resolved": "5.1.1",
         "contentHash": "m1YCo+V+MHUqJV7+KtXlNYig93tEAnPdPevIHi8hVqV8/ceF82Nqe8vS1ROQ25nweTcxYgkrLHwhvJsH2SFwZA==",
         "dependencies": {
@@ -1563,8 +1564,8 @@
       "NHibernateProfiler.Appender": {
         "type": "CentralTransitive",
         "requested": "[6.0.*, )",
-        "resolved": "6.0.6050",
-        "contentHash": "3X2NJSnNg2Dvl9TzKEJe9YZRvVXfAoxglk7O+gGB5rUP7/0V49XIUUjhbbkWixTie5Wrghf7Cj8I3oH6zbIafg==",
+        "resolved": "6.0.6053",
+        "contentHash": "WN0Cm9s8k+K4aPTEwAhVykzG8l37iPRJgdAJNbHfAycIo+y+D/J8PnDcqCfLdrzDKtu/6zgKEkIAjBUGbMDpXw==",
         "dependencies": {
           "Azure.Storage.Blobs": "12.18.0",
           "Google.Protobuf": "3.24.4",
@@ -1581,7 +1582,7 @@
       },
       "PPWCode.API.Core": {
         "type": "CentralTransitive",
-        "requested": "[2.*, )",
+        "requested": "[2.*-*, )",
         "resolved": "2.1.1",
         "contentHash": "8xA4WoQ9KQh2g1y7Shec8Psh6Lr23rGSM4kR0ab+TeACurLdeteVwUzBjmLJfW+DQD0GgmVW1a0ybkv0DV008g==",
         "dependencies": {
@@ -1593,19 +1594,6 @@
         "requested": "[2.*, )",
         "resolved": "2.2.1",
         "contentHash": "EnSpiADCKJenktPGhgsDAnsSzbf+HTDq52Wkr2F+58/sanx2rb4//Q68SnYEaOKl/AACQBp+FOKuGih0lYYW0A=="
-      },
-      "PPWCode.Vernacular.NHibernate.III": {
-        "type": "CentralTransitive",
-        "requested": "[4.*, )",
-        "resolved": "4.1.0",
-        "contentHash": "QLEuQ65ggE05vGtzLsaKU9+/aBRmyy5UesslB0GMCcI+830GK5Gt9q/a0vnT0WjfT2aLlYV++aJH3kBSVcq4AA==",
-        "dependencies": {
-          "Common.Logging": "[3.4.1, 4.0.0)",
-          "JetBrains.Annotations": "2025.2.4",
-          "NHibernate": "5.6.0",
-          "PPWCode.Vernacular.Persistence.IV": "2.1.1",
-          "System.Configuration.ConfigurationManager": "10.0.2"
-        }
       },
       "PPWCode.Vernacular.Persistence.IV": {
         "type": "CentralTransitive",
@@ -1630,19 +1618,19 @@
       },
       "System.Configuration.ConfigurationManager": {
         "type": "CentralTransitive",
-        "requested": "[10.*, )",
-        "resolved": "10.0.2",
-        "contentHash": "UpBPpVzF+xbB3GsBrraPvlYCwUiOhs+RLxnTMKLqDs2gNNaAtxQRlKjXfMV3zxE+hiQkGId5olZ+9tE6xXHdwQ==",
+        "requested": "[9.*, )",
+        "resolved": "9.0.15",
+        "contentHash": "KaQ/0Hoi8bfStyzpITKW9jHY8qkVwii/m26foTTeXMx9UGwhtQMWIwBmLDUFHTFmP39x0mqnAuvZi+yyem/N1w==",
         "dependencies": {
-          "System.Diagnostics.EventLog": "10.0.2",
-          "System.Security.Cryptography.ProtectedData": "10.0.2"
+          "System.Diagnostics.EventLog": "9.0.15",
+          "System.Security.Cryptography.ProtectedData": "9.0.15"
         }
       },
       "System.Data.SqlClient": {
         "type": "CentralTransitive",
         "requested": "[4.*, )",
-        "resolved": "4.9.0",
-        "contentHash": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
+        "resolved": "4.9.1",
+        "contentHash": "A7RK9I4UaVHJ407GTfy37S4ABHt1+lZ+/uoA54zTv0XaaWgHO5BtXSMzMVqB6socIHEeeK5K1YRgaxCEfD79wQ==",
         "dependencies": {
           "runtime.native.System.Data.SqlClient.sni": "4.4.0"
         }
