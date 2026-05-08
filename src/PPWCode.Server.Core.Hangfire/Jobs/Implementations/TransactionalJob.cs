@@ -1,4 +1,4 @@
-// Copyright 2024 by PeopleWare n.v..
+// Copyright 2026 by PeopleWare n.v..
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -15,9 +15,9 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Castle.Core.Logging;
-
 using JetBrains.Annotations;
+
+using Microsoft.Extensions.Logging;
 
 using NHibernate;
 
@@ -28,7 +28,8 @@ namespace PPWCode.Server.Core.Hangfire.Jobs.Implementations
 {
     public abstract class TransactionalJob : ITransactionalJob
     {
-        private ILogger _logger = NullLogger.Instance;
+        [CanBeNull]
+        private ILogger _logger;
 
         protected TransactionalJob(
             [NotNull] IRequestContext requestContext,
@@ -50,17 +51,7 @@ namespace PPWCode.Server.Core.Hangfire.Jobs.Implementations
         [NotNull]
         [UsedImplicitly]
         public ILogger Logger
-        {
-            get => _logger;
-            set
-            {
-                // ReSharper disable once ConditionIsAlwaysTrueOrFalse
-                if (value != null)
-                {
-                    _logger = value;
-                }
-            }
-        }
+            => _logger ??= PPWLogging.GetLogger(GetType());
 
         [NotNull]
         protected virtual Task RunAsync(
@@ -108,7 +99,13 @@ namespace PPWCode.Server.Core.Hangfire.Jobs.Implementations
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            Logger.Info(startMessage);
+
+            if (Logger.IsEnabled(LogLevel.Information))
+            {
+                Logger.LogInformation(
+                    "{Message}",
+                    startMessage());
+            }
 
             TResult result;
             try
@@ -128,7 +125,10 @@ namespace PPWCode.Server.Core.Hangfire.Jobs.Implementations
                 }
                 catch (Exception e)
                 {
-                    Logger.Error($"job, {GetType().FullName}, roll-backed because of a cancellation request", e);
+                    Logger.LogError(
+                        e,
+                        "Job, {JobType}, roll-backed because of a cancellation request",
+                        GetType().FullName);
                     await RollbackAsync(transaction).ConfigureAwait(false);
                     throw;
                 }
@@ -140,7 +140,14 @@ namespace PPWCode.Server.Core.Hangfire.Jobs.Implementations
             finally
             {
                 sw.Stop();
-                Logger.Info(() => $"{finishedMessage()}, elapsed {sw.ElapsedMilliseconds} ms.");
+
+                if (Logger.IsEnabled(LogLevel.Information))
+                {
+                    Logger.LogInformation(
+                        "{Message}, elapsed in {ElapsedMilliseconds} ms",
+                        finishedMessage(),
+                        sw.ElapsedMilliseconds);
+                }
             }
 
             return result;
