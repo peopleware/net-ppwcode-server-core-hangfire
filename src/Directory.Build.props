@@ -22,7 +22,7 @@
 
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/peopleware/net-ppwcode-server-core-hangfire.git</RepositoryUrl>
-        <PackageTags>ppwcode server core hangfire</PackageTags>
+        <PackageTags>ppwcode server core hangfire gen4</PackageTags>
         <PackageProjectUrl>https://github.com/peopleware/net-ppwcode-server-core-hangfire</PackageProjectUrl>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
