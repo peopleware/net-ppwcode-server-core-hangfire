@@ -38,14 +38,14 @@ jobs:
       - name: Restore dependencies
         shell: bash
         run: |
-          dotnet restore PPWCode.Server.Core.Hangfire.sln \
+          dotnet restore PPWCode.Server.Core.Hangfire.slnx \
             --locked-mode \
             -p:Configuration=Release
 
       - name: Build
         shell: bash
         run: |
-          dotnet build PPWCode.Server.Core.Hangfire.sln \
+          dotnet build PPWCode.Server.Core.Hangfire.slnx \
             --configuration Release \
             --no-restore \
             -p:ContinuousIntegrationBuild=true
